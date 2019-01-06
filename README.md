@@ -1,6 +1,6 @@
 # sicp
 
-- [ ] Building Abstractions with Procedures
+- [X] Building Abstractions with Procedures
 - [ ] Building Abstractions with Data
 - [ ] Modularity, Objects, and State
 - [ ] Metalinguistic Abstraction
