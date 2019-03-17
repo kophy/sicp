@@ -5,5 +5,5 @@
   (if (= x 0) 0 y))
 
 (test 0 (p))
-; applicative-order evaluation -> infinite loop
-; normal-order evaluation -> 0
+;; applicative-order evaluation -> infinite loop
+;; normal-order evaluation -> 0
