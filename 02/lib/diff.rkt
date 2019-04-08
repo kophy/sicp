@@ -15,7 +15,10 @@
 (define (variable? x) (symbol? x))
 
 (define (same-variable? v1 v2)
-  (and (variable? v1) (variable? v2) (eq? v1 v2)))
+  (and
+      (variable? v1)
+      (variable? v2)
+      (eq? v1 v2)))
 
 (define (=number? exp num)
   (and (number? exp) (= exp num)))
@@ -24,7 +27,8 @@
   (cond
     ((=number? a1 0) a2)
     ((=number? a2 0) a1)
-    ((and (number? a2) (number? a2)) (+ a1 a2))
+    ((and (number? a2) (number? a2))
+      (+ a1 a2))
     (else (list '+ a1 a2))))
 
 (define (make-product m1 m2)
